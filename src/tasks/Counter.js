@@ -1,6 +1,4 @@
 import React from "react";
-// import React, { Component } from "react";
-// import React, { useState } from "react";
 
 export class Counter extends React.Component {
   constructor(props) {
@@ -36,15 +34,9 @@ export class Counter extends React.Component {
     return (
       //call handlers in onClick
       <div>
-        <button className="inc" onClick={this.increment}>
-          Increment!
-        </button>
-        <button className="dec" onClick={this.decrement}>
-          Decrement!
-        </button>
-        <button className="reset" onClick={this.reset}>
-          Reset
-        </button>
+        <button onClick={this.increment}>Increment!</button>
+        <button onClick={this.decrement}>Decrement!</button>
+        <button onClick={this.reset}>Reset</button>
         <h1>Current Count: {this.state.count}</h1>
       </div>
     );
