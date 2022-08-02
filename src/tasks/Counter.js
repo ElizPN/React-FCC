@@ -6,6 +6,7 @@ export class Counter extends React.Component {
     this.state = {
       count: 0,
     };
+
     //bining handels with "this"
     this.increment = this.increment.bind(this);
     this.decrement = this.decrement.bind(this);
